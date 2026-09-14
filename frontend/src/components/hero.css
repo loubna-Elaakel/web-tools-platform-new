@@ -1,0 +1,53 @@
+.hero{
+text-align:center;
+padding:80px 20px;
+background:#0f172a;
+color:white;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+.search-container{
+position:relative;
+max-width:450px;
+margin:auto;
+}
+
+.search-container input{
+width:100%;
+padding:14px 14px 14px 45px;
+border-radius:8px;
+border:none;
+font-size:16px;
+}
+
+.search-icon{
+position:absolute;
+left:15px;
+top:50%;
+transform:translateY(-50%);
+color:#64748b;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero button {
+    width: 100%;
+  }
+}

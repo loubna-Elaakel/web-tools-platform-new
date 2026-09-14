@@ -1,0 +1,50 @@
+.tools{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:20px;
+text-align:center;
+text-decoration:none;
+color:black;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.icon{
+font-size:35px;
+margin-bottom:10px;
+color:#4f46e5;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .tools {
+    display: grid;
+    grid-template-columns: 1fr; /* tool وحدة فالسطر */
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}

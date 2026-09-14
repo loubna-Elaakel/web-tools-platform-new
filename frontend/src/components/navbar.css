@@ -1,0 +1,18 @@
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 50px;
+
+background: linear-gradient(
+120deg,
+#2563eb 0%,
+#3b82f6 40%,
+#06b6d4 100%
+);
+
+color:white;
+
+}

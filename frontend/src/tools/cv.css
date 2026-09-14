@@ -1,0 +1,436 @@
+/* ================= CONTAINER ================= */
+
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background: #f5f5f5;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ================= FORM ================= */
+
+.form {
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form textarea{
+  resize: vertical;
+  min-height:70px;
+}
+
+.upload-btn{
+  background:#0d6efd;
+  color:#fff;
+  padding:12px;
+  border-radius:6px;
+  cursor:pointer;
+  text-align:center;
+  transition:.3s;
+}
+
+.upload-btn:hover{
+  background:#0b5ed7;
+}
+
+button{
+  padding:12px;
+  border:none;
+  border-radius:6px;
+  background:#111;
+  color:white;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  background:#333;
+}
+
+/* ================= CV ================= */
+
+.cv{
+  width:794px;
+  min-height:1123px;
+  background:#fff;
+  display:flex;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* ================= LEFT ================= */
+
+.left{
+  width:34%;
+  background:#111;
+  color:white;
+  padding:35px 22px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* ================= IMAGE ================= */
+
+.img-circle,
+.img-square{
+
+  width:210px;
+  height:210px;
+
+  object-fit:cover;
+  object-position:center;
+
+  border:5px solid white;
+
+  box-shadow:0 5px 20px rgba(0,0,0,.35);
+
+  margin-bottom:35px;
+
+  flex-shrink:0;
+}
+
+.img-circle{
+  border-radius:50%;
+}
+
+.img-square{
+  border-radius:12px;
+}
+
+.left img{
+  display:block;
+  margin:0 auto 35px;
+}
+
+/* ================= TITLES ================= */
+
+.left h3{
+
+  width:100%;
+
+  font-size:18px;
+
+  margin-top:28px;
+  margin-bottom:14px;
+
+  border-bottom:1px solid rgba(255,255,255,.4);
+
+  padding-bottom:8px;
+
+  letter-spacing:.5px;
+}
+
+/* ================= TEXT ================= */
+
+.left p,
+.right p{
+
+  width:100%;
+
+  margin-bottom:14px;
+
+  line-height:1.8;
+
+  font-size:15px;
+
+  word-wrap:break-word;
+
+  overflow-wrap:anywhere;
+
+  white-space:pre-wrap;
+}
+
+/* ================= ICON ================= */
+
+.icon{
+
+  margin-right:8px;
+
+  color:#5dade2;
+
+  font-size:16px;
+}
+
+/* ================= RIGHT ================= */
+
+.right{
+  width:66%;
+  padding:30px 20px;
+  padding-top:195px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+.header{
+    height:90px; /* المساحة الخاصة بالاسم */
+}
+
+.header h1{
+    margin:0;
+    font-size:42px;
+    line-height:1.2;
+}
+
+.content{
+    margin-top:0;
+}
+
+.right h1{
+  font-size:42px;
+  margin-top:-100px;
+  margin-bottom:210px;
+  line-height:1.2;
+}
+
+.right h2:first-of-type{
+  margin-top:40px;
+}
+/* ================= NAME ================= */
+
+.right h1{
+
+  font-size:36px;
+
+  margin-bottom:45px;
+
+  word-break:break-word;
+
+  color:#111;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.right h2{
+
+  margin-top:25px;
+
+  margin-bottom:12px;
+
+  padding-bottom:7px;
+
+  border-bottom:2px solid #111;
+
+  font-size:22px;
+
+  color:#111;
+}
+
+/* ================= THEMES ================= */
+
+.cv.dark .left{
+
+  background:#111;
+  color:white;
+}
+
+.cv.dark .right{
+
+  background:white;
+  color:black;
+}
+
+.cv.light .left{
+
+  background:#cfcfcf;
+  color:black;
+}
+
+.cv.light .right{
+
+  background:white;
+  color:black;
+}
+
+.cv.white .left{
+
+  background:white;
+  color:black;
+  border-right:1px solid #ddd;
+}
+
+.cv.white .right{
+
+  background:white;
+  color:black;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 10px;
+  }
+
+  /* ================= FORM ================= */
+
+  .form {
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .form input,
+  .form textarea,
+  .form select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .upload-btn,
+  .form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ================= CV PREVIEW ================= */
+
+  .cv {
+    width: 794px;
+    min-width: 794px;
+    height: 1123px;
+    
+    transform: scale(0.42);
+    transform-origin: top center;
+
+    margin: 0 auto -650px auto;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+  }
+
+  /* ================= LEFT ================= */
+
+  .left {
+    width: 34%;
+    box-sizing: border-box;
+    padding: 25px 18px;
+  }
+
+  /* ================= RIGHT ================= */
+
+  .right {
+    width: 66%;
+    box-sizing: border-box;
+    padding: 25px 18px;
+    padding-top: 160px;
+  }
+
+  /* ================= IMAGE ================= */
+
+  .img-circle,
+  .img-square {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 25px;
+  }
+
+  /* ================= NAME ================= */
+
+  .right h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  /* ================= TITLES ================= */
+
+  .left h3 {
+    font-size: 16px;
+  }
+
+  .right h2 {
+    font-size: 20px;
+  }
+
+  /* ================= TEXT ================= */
+
+  .left p,
+  .right p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* ================= PRINT ================= */
+
+@media print{
+
+body{
+
+margin:0;
+
+background:white;
+
+}
+
+.cv{
+
+width:794px !important;
+
+height:1123px !important;
+
+transform:none !important;
+
+box-shadow:none;
+
+}
+
+.left{
+
+width:34% !important;
+
+}
+
+.right{
+
+width:66% !important;
+
+}
+
+.img-circle,
+.img-square{
+
+width:190px !important;
+
+height:190px !important;
+
+}
+
+.left{
+    padding-top:30px;
+}
+
+.right{
+    padding:30px;
+}
+
+
+
+}
