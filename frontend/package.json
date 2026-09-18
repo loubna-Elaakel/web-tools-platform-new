@@ -1,7 +1,8 @@
 {
   "name": "frontend",
-  "version": "0.1.0",
-  "private": true,
+"version": "0.1.0",
+"private": true,
+"homepage": "https://loubna-Elaakel.github.io/web-tools-platform-new",
   "dependencies": {
     "@imgly/background-removal": "^1.7.0",
     "@testing-library/dom": "^10.4.1",
