@@ -58,7 +58,7 @@ import PDFSplit from "./tools/PDFSplit";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter   basename="/web-tools-platform-new">
 
       <Routes>
 
